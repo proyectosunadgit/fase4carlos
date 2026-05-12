@@ -2,8 +2,8 @@
 # Fase 4 - Componente practico
 # Curso: Programacion 213023
 # Sistema: Clientes, servicios y reservas para Software FJ
-# Autor: 
-# Grupo: 213023_
+# Autor: CARLOS ENRIQUE DOUAT RICAURTE
+# Grupo: 213023_255
 
 
 from abc import ABC, abstractmethod
