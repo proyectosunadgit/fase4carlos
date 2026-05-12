@@ -1,0 +1,46 @@
+INFO :: 2026-05-12 17:58:51 :: ARRANQUE_APLICACION | Software FJ | Fase 4
+INFO :: 2026-05-12 17:58:51 :: CLIENTE_OK | codigo=C-501 | nombre=Valentina Rojas
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=1
+INFO :: 2026-05-12 17:58:51 :: CLIENTE_OK | codigo=C-502 | nombre=Esteban Moreno
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=2
+ERROR :: 2026-05-12 17:58:51 :: CASO_CONTROLADO | numero=3 | error=El nombre del cliente debe tener minimo 5 caracteres.
+ERROR :: 2026-05-12 17:58:51 :: CASO_CONTROLADO | numero=4 | error=El documento del cliente debe contener solo numeros.
+INFO :: 2026-05-12 17:58:51 :: SERVICIO_OK | codigo=S-801 | nombre=Sala Directiva Premium
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=5
+INFO :: 2026-05-12 17:58:51 :: SERVICIO_OK | codigo=S-802 | nombre=Kit Audiovisual Movil
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=6
+INFO :: 2026-05-12 17:58:51 :: SERVICIO_OK | codigo=S-803 | nombre=Asesoria De Procesos
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=7
+ERROR :: 2026-05-12 17:58:51 :: CASO_CONTROLADO | numero=8 | error=La tarifa del servicio debe ser mayor que cero.
+INFO :: 2026-05-12 17:58:51 :: RESERVA_NUEVA | codigo=R-901 | cliente=C-501 | servicio=S-801
+INFO :: 2026-05-12 17:58:51 :: RESERVA_OK | codigo=R-901
+INFO :: 2026-05-12 17:58:51 :: RESERVA_CONFIRMADA | codigo=R-901
+INFO :: 2026-05-12 17:58:51 :: FIN_CONFIRMACION | codigo=R-901 | estado=Confirmada
+INFO :: 2026-05-12 17:58:51 :: COBRO_APROBADO | codigo=R-901 | total=206536.40
+INFO :: 2026-05-12 17:58:51 :: FIN_COBRO | codigo=R-901 | estado=Pagada
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=9
+INFO :: 2026-05-12 17:58:51 :: RESERVA_NUEVA | codigo=R-902 | cliente=C-502 | servicio=S-803
+INFO :: 2026-05-12 17:58:51 :: RESERVA_OK | codigo=R-902
+ERROR :: 2026-05-12 17:58:51 :: RESERVA_NO_CONFIRMADA | codigo=R-902 | detalle=El acompanamiento profesional solo permite maximo 4 horas.
+INFO :: 2026-05-12 17:58:51 :: FIN_CONFIRMACION | codigo=R-902 | estado=Registrada
+ERROR :: 2026-05-12 17:58:51 :: CASO_CONTROLADO | numero=10 | error=No se pudo confirmar la reserva por una condicion del servicio.
+WARNING :: 2026-05-12 17:58:51 :: CONTROL_SERVICIO | S-802 | servicio bloqueado
+INFO :: 2026-05-12 17:58:51 :: RESERVA_NUEVA | codigo=R-903 | cliente=C-501 | servicio=S-802
+INFO :: 2026-05-12 17:58:51 :: RESERVA_OK | codigo=R-903
+ERROR :: 2026-05-12 17:58:51 :: RESERVA_NO_CONFIRMADA | codigo=R-903 | detalle=El servicio seleccionado se encuentra bloqueado.
+INFO :: 2026-05-12 17:58:51 :: FIN_CONFIRMACION | codigo=R-903 | estado=Registrada
+ERROR :: 2026-05-12 17:58:51 :: CASO_CONTROLADO | numero=11 | error=No se pudo confirmar la reserva por una condicion del servicio.
+INFO :: 2026-05-12 17:58:51 :: RESERVA_NUEVA | codigo=R-904 | cliente=C-502 | servicio=S-801
+INFO :: 2026-05-12 17:58:51 :: RESERVA_OK | codigo=R-904
+ERROR :: 2026-05-12 17:58:51 :: COBRO_RECHAZADO | codigo=R-904 | detalle=Para cobrar, la reserva primero debe estar confirmada.
+INFO :: 2026-05-12 17:58:51 :: FIN_COBRO | codigo=R-904 | estado=Registrada
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=12
+INFO :: 2026-05-12 17:58:51 :: RESERVA_NUEVA | codigo=R-905 | cliente=C-502 | servicio=S-803
+INFO :: 2026-05-12 17:58:51 :: RESERVA_OK | codigo=R-905
+INFO :: 2026-05-12 17:58:51 :: RESERVA_CONFIRMADA | codigo=R-905
+INFO :: 2026-05-12 17:58:51 :: FIN_CONFIRMACION | codigo=R-905 | estado=Confirmada
+WARNING :: 2026-05-12 17:58:51 :: RESERVA_CANCELADA | codigo=R-905
+INFO :: 2026-05-12 17:58:51 :: CASO_COMPLETO | numero=13
+ERROR :: 2026-05-12 17:58:51 :: CLIENTE_NO_EXISTE | posicion=15
+ERROR :: 2026-05-12 17:58:51 :: CASO_CONTROLADO | numero=14 | error=No se encontro el cliente solicitado en la lista interna.
+INFO :: 2026-05-12 17:58:51 :: CIERRE_APLICACION | Software FJ | Fase 4
